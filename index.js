@@ -1,8 +1,20 @@
+
+
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let y = 0;(y< array.length); y++) {
+    
+    for (let i = 1 ; (i< array.length);i++){
+      console.log(array)
+      if (array[y]+ array[y + i] === target){
+        return true
+    }
+    
+    }  
+  }
+  return false 
 }
 
-/* 
+/* add each array item with each array item, see if any of these numbers euquals the target number 
   Write the Big O time complexity of your function here
 */
 
